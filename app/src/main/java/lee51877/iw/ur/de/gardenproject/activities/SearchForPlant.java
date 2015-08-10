@@ -6,13 +6,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import lee51877.iw.ur.de.gardenproject.R;
+import lee51877.iw.ur.de.gardenproject.util.GardenDataProvider;
 
 public class SearchForPlant extends AppCompatActivity {
+    private GardenDataProvider dataProvider = new GardenDataProvider();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_for_plant);
+        dataProvider.getTestInfo();
     }
 
     @Override
